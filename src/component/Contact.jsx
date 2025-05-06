@@ -35,7 +35,7 @@ function Contact() {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden
+      className=" text-center p-6 py-20 lg:px-32 w-full overflow-hidden
     "
       id="Contact"
     >
