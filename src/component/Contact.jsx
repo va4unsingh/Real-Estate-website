@@ -10,7 +10,7 @@ function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "");
+    formData.append("access_key", import.meta.env.VITE_APIKEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -31,10 +31,10 @@ function Contact() {
   };
   return (
     <motion.div
-    initial={{ opacity: 0, x: -200 }}
-    transition={{ duration: 1 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    viewport={{ once: true }}
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden
     "
       id="Contact"
