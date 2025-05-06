@@ -1,10 +1,12 @@
 import "./App.css";
 
+import Header from "./component/Header";
+
 function App() {
   return (
-    <>
-      <div></div>
-    </>
+    <div className="w-full overflow-hidden">
+      <Header />
+    </div>
   );
 }
 
